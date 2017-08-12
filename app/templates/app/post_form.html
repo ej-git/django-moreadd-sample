@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+{% block content %}
+    <form action="" method="POST">
+        {{ form }}
+        {% csrf_token %}
+        <button type="submit" name="action">送信</button>
+        <button type="submit" name="action" value="save_and_create">保存してもう一つ追加</button>
+        <button type="submit" name="action" value="save_and_update">保存して編集を続ける</button>
+    </form>
+{% endblock %}
